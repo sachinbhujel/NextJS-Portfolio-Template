@@ -1,5 +1,11 @@
 import React from "react";
-import { projects } from "@/data/data";
+import { projects , seo } from "@/data/data";
+
+export const metadata = {
+    title: `Projects | ${seo.title}`,
+    description: "Explore a curated collection of web development projects built with Next.js, React, and modern web technologies.",
+    keywords: "projects, web development, Next.js, React, JavaScript, portfolio"
+};
 
 function Projects() {
     return (

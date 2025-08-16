@@ -9,7 +9,7 @@ export default function ProjectsList() {
                 <h2 className="text-xl font-medium before:content-['>'] before:mr-1">
                     Projects
                 </h2>
-                <Link href="/projects" className="text-sm flex underline">
+                <Link href="/projects" className="text-sm flex underline hover:text-base-content/80">
                     See All
                 </Link>
             </div>
@@ -24,9 +24,9 @@ export default function ProjectsList() {
                     >
                         <div className="flex flex-col gap-2 justify-between">
                             <div className="flex items-center justify-between">
-                                <h2 className="font-semibold text-lg">
+                                <h3 className="font-semibold text-lg">
                                     {item.title}
-                                </h2>
+                                </h3>
                                 <svg
                                     focusable="false"
                                     preserveAspectRatio="xMidYMid meet"

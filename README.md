@@ -3,19 +3,21 @@
 A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.
 
 ## Features
-
--   🚀 Fast and lightweight
--   📱 Fully responsive
--   🎨 Clean, minimal design
--   🌙 Dark/Light mode
--   ⚡ Easy to customize
+- 🚀 Fast and lightweight
+- 📱 Fully responsive
+- 🔍 SEO friendly
+- 🌙 Dark/Light mode
+- 🎨 Clean, minimal design
+- ⚡ Easy to customize
+- 🚦 Next.js App Router ready
+- 📊 Analytics-ready (add via `layout.js`)
 
 ## Tech Stack
 
--   Next.js 14
--   Tailwind CSS
--   JavaScript
--   DaisyUI
+- Next.js 15
+- Tailwind CSS
+- JavaScript
+- DaisyUI
 
 ## Deploy
 

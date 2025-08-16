@@ -13,7 +13,7 @@ export default function About() {
                     </p>
                     <p className="text-base text-base-content/80">
                         If you’ve got any questions or just feel like chatting,
-                        shoot me an{" "}
+                        send me an{" "}
                         <a
                             href={`mailto:${about.email}`}
                             className="font-bold hover:underline cursor-pointer"
