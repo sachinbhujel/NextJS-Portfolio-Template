@@ -1,8 +1,12 @@
-"use client";
-
-import React, { useEffect, useState } from "react";
-import { blogs } from "../../data/data";
+import React from "react";
+import { blogs , seo } from "../../data/data";
 import Link from "next/link";
+
+export const metadata = {
+    title: `Blogs | ${seo.title}`,
+    description: "Read articles, tutorials, and insights on web development, Next.js, and programming.",
+    keywords: "blog, web development, Next.js, programming, tutorials"
+};
 
 function page() {
     return (

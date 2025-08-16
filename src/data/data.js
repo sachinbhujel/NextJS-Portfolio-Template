@@ -1,9 +1,16 @@
+
+
 export const about = {
     name: "Your Name",
     role: "Your Profession",
     about: "A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.",
-    email: "sachinbhujel@duck.com",
+    email: "your.email@example.com",
 };
+export const seo = {
+    title: `${about.name} | ${about.role}`,
+    description: "Minimal, clean Next.js portfolio template for developers seeking a simple, professional online presence without extra complexity.",
+    keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
+}
 
 export const forms = {
     formspreeUrl: "https://formspree.io/f/<url>",
@@ -91,7 +98,7 @@ export const experience = [
         title: "Junior Developer at Innovate Labs",
         description:
             "Developed and tested frontend components, optimized web pages for speed, and contributed to team code reviews and debugging sessions.",
-        date: "01/09/2024",
+        date: "01/09/2022",
     },
 ];
 
@@ -103,12 +110,12 @@ export const blogs = [
     },
     {
         title: "CSS Grid vs Flexbox: When to Use Which",
-        date: "25/04/2025",
+        date: "25/12/2024",
         link: "#",
     },
     {
         title: "Next.js SEO Best Practices",
-        date: "10/07/2025",
+        date: "10/07/2024",
         link: "#",
     },
 ];

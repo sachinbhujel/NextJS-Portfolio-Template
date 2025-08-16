@@ -1,5 +1,11 @@
 import React from "react";
-import { forms } from "@/data/data";
+import { forms , seo } from "@/data/data";
+
+export const metadata = {
+    title: `Contact Me | ${seo.title}`,
+    description: "Get in touch with me to discuss projects, collaborations, or just to say hello.",
+    keywords: "contact, get in touch, collaboration, email, message, web developer"
+};
 
 function Contact() {
     return (

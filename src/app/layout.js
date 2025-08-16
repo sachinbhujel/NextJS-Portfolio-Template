@@ -1,13 +1,15 @@
 import "./globals.css";
 import Navbar from "./components/Navbar";
-import { about } from "@/data/data";
+import { seo } from "@/data/data";
+import Footer from "./components/Footer";
 
 export const metadata = {
-    title: `Hi there👋 | ${about.name} | ${about.role}`,
+    title: `${seo.title}`,
     icons: {
         icon: [{ url: "/favicon.ico" }],
     },
-    description: `${about.about}`,
+    description: `${seo.description}`,
+    keywords: `${seo.keywords}`
 };
 
 export default function RootLayout({ children }) {
@@ -30,6 +32,7 @@ export default function RootLayout({ children }) {
                 <div className="w-[100%] md:w-[700px] m-auto">
                     <Navbar />
                     {children}
+                    <Footer />
                 </div>
             </body>
         </html>

@@ -2,7 +2,6 @@ import ProjectsList from "./components/ProjectsList";
 import TechLists from "./components/TechLists";
 import About from "./components/About";
 import Profile from "./components/Profile";
-import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 
 export default function Home() {
@@ -15,7 +14,6 @@ export default function Home() {
                     <ProjectsList />
                     <TechLists />
                     <Experience />
-                    <Footer />
                 </main>
             </div>
         </>
