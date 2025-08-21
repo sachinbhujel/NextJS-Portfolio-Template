@@ -1,13 +1,12 @@
-
-
 export const about = {
     name: "Your Name",
     role: "Your Profession",
     about: "A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.",
     email: "your.email@example.com",
 };
+
 export const seo = {
-    title: `Minimal, clean Next.js portfolio template | ${about.name} | ${about.role}`,
+    title: "Minimal, clean Next.js portfolio template",
     description: "Minimal, clean Next.js portfolio template for developers seeking a simple, professional online presence without extra complexity.",
     keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
 }
