@@ -35,6 +35,12 @@ export const about = {
   email: "your.email@example.com"
 };
 
+export const seo = {
+    title: "Minimal, clean Next.js portfolio template",
+    description: "Minimal, clean Next.js portfolio template for developers seeking a simple, professional online presence without extra complexity.",
+    keywords: "portfolio, web developer, Next.js, developer portfolio, minimal portfolio",
+}
+
 export const forms = {
     formspreeUrl: "https://formspree.io/f/<url>",
 }
