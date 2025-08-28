@@ -1,6 +1,13 @@
 # NextJS Portfolio Template
 
 A minimal, clean portfolio template built with Next.js. Perfect for developers who want a simple yet professional online presence without the complexity.
+<a href="https://peerlist.io/sachinbhujel/project/nextjs-portfolio-template" target="_blank" rel="noreferrer">
+				<img
+					src="https://peerlist.io/api/v1/projects/embed/PRJHJKNQNAKA7K8EJCKEOM8N8Q89JQ?showUpvote=true&theme=light"
+					alt="NextJS Portfolio Template"
+					style="width: auto; height: 72px;"
+				/>
+			</a>
 
 ## Features
 - 🚀 Fast and lightweight
