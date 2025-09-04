@@ -25,15 +25,10 @@ export default function RootLayout({ children }) {
                     href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
                     rel="stylesheet"
                 ></link>
-                        <script
+                <script
                     defer
                     src="https://cloud.umami.is/script.js"
                     data-website-id="0b4219ac-7d8a-4f5c-96c7-f3898a4b9bc1"
-                ></script>
-                <script
-                    data-goatcounter="https://sachinbhujel.goatcounter.com/count"
-                    async
-                    src="//gc.zgo.at/count.js"
                 ></script>
             </head>
             <body
