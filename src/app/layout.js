@@ -9,7 +9,7 @@ export const metadata = {
         icon: [{ url: "/favicon.ico" }],
     },
     description: `${seo.description}`,
-    keywords: `${seo.keywords}`
+    keywords: `${seo.keywords}`,
 };
 
 export default function RootLayout({ children }) {
@@ -31,9 +31,7 @@ export default function RootLayout({ children }) {
                     data-website-id="0b4219ac-7d8a-4f5c-96c7-f3898a4b9bc1"
                 ></script>
             </head>
-            <body
-                className={`antialiased overflow-auto`}
-            >
+            <body className={`antialiased overflow-auto`}>
                 <div className="w-[100%] md:w-[700px] m-auto">
                     <Navbar />
                     {children}
