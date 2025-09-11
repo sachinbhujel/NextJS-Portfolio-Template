@@ -1,18 +1,43 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 
 export default function Navbar() {
     const [hideOnMobile, setHideOnMobile] = useState(true);
     const pathname = usePathname();
+    const [isDark, setIsDark] = useState(false);
     const blogs = pathname === "/blogs";
+
+    useEffect(() => {
+        const savedTheme = localStorage.getItem("theme");
+        if (savedTheme) {
+            setIsDark(savedTheme === "dark");
+            document.documentElement.setAttribute("data-theme", savedTheme);
+        } else {
+            const prefersDark = window.matchMedia(
+                "(prefers-color-scheme: dark)"
+            ).matches;
+            setIsDark(prefersDark);
+            document.documentElement.setAttribute(
+                "data-theme",
+                prefersDark ? "dark" : "light"
+            );
+        }
+    }, []);
+
+    const handleThemeChange = (checked) => {
+        const newTheme = checked ? "dark" : "light";
+        setIsDark(checked);
+        document.documentElement.setAttribute("data-theme", newTheme);
+        localStorage.setItem("theme", newTheme);
+    };
 
     return (
         <>
             <div className="flex justify-center sticky top-2 items-center gap-[25px] w-full z-10">
-                <div className="w-[70%] sm:w-[80%] border flex items-center sm:justify-center justify-end bg-gray-10/50 backdrop-blur-sm rounded-4xl py-2 px-4">
+                <div className="w-[70%] sm:w-[80%] border flex items-center sm:justify-center justify-end bg-gray-10/50 backdrop-blur-sm rounded-3xl py-2 px-4">
                     <div className="flex items-center sm:gap-8 gap-5">
                         <div className="flex items-center gap-4">
                             <ul
@@ -50,7 +75,7 @@ export default function Navbar() {
                                         href="/contact"
                                         className="hover:underline"
                                     >
-                                     Contact
+                                        Contact
                                     </Link>
                                 </li>
                             </ul>
@@ -84,13 +109,10 @@ export default function Navbar() {
                                 <label className="toggle text-base-content toggle-sm">
                                     <input
                                         type="checkbox"
-                                        onChange={(e) => {
-                                            const isNight = e.target.checked;
-                                            document.documentElement.setAttribute(
-                                                "data-theme",
-                                                isNight ? "dark" : "light"
-                                            );
-                                        }}
+                                        checked={isDark}
+                                        onChange={(e) =>
+                                            handleThemeChange(e.target.checked)
+                                        }
                                         className="theme-controller"
                                     />
 
